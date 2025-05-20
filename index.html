@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Preparatório para Concursos | Aprovação Garantida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        .payment-option {
+            transition: all 0.3s ease;
+        }
+        .payment-option:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">CP</div>
+                    <span class="ml-3 text-xl font-bold text-blue-800">Curso Preparatório</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">Sobre</a>
+                    <a href="#teacher" class="text-gray-700 hover:text-blue-600 font-medium">Professor</a>
+                    <a href="#courses" class="text-gray-700 hover:text-blue-600 font-medium">Cursos</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium">Depoimentos</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium">Dúvidas</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Prepare-se para o concurso dos seus sonhos</h1>
+                <p class="text-xl mb-8">Com o método exclusivo do Professor Carlos, você estará pronto para conquistar sua vaga no serviço público.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#pricing" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg text-center transition duration-300">Matricule-se agora</a>
+                    <a href="#courses" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-bold text-lg text-center transition duration-300">Conheça os cursos</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://dhg1h5j42swfq.cloudfront.net/2018/03/06170153/como-estudar-para-concursos-publicos.jpg" alt="Estudante preparando-se para concurso" class="rounded-lg shadow-2xl max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Por que escolher nosso curso?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Alto índice de aprovação</h3>
+                    <p class="text-gray-600">Mais de 85% dos nossos alunos são aprovados nos principais concursos do país.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-book-open text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Material exclusivo</h3>
+                    <p class="text-gray-600">Apostilas atualizadas e resumos esquematizados para facilitar seu aprendizado.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Suporte personalizado</h3>
+                    <p class="text-gray-600">Tire dúvidas diretamente com o professor e receba orientação individualizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Grupo de estudo" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre o nosso método</h2>
+                    <p class="text-gray-600 mb-6">Desenvolvemos um método exclusivo que combina teoria e prática de forma eficiente, garantindo que você absorva o conteúdo necessário para a prova de forma consistente.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Aulas focadas nos editais mais recentes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Simulados periódicos para acompanhar seu progresso</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Técnicas de memorização e gestão do tempo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Análise detalhada das provas anteriores</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Section -->
+    <section id="teacher" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Conheça o professor</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Professor Carlos" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-xl">
+                        <div class="absolute -bottom-4 -right-4 bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl shadow-lg">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Prof. Carlos Mendes</h3>
+                    <p class="text-gray-600 mb-6">Mestre em Direito Administrativo com mais de 15 anos de experiência em preparação para concursos públicos. Já ajudou mais de 2.000 alunos a conquistarem suas vagas no serviço público.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="font-bold text-gray-800 mb-3">Formação</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                    <span>Mestrado em Direito - UFMG</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                    <span>Especialização em Direito Administrativo</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                    <span>Pós-graduação em Docência do Ensino Superior</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="font-bold text-gray-800 mb-3">Experiência</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-500 mt-1 mr-2"></i>
+                                    <span>Examinador de concursos públicos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-500 mt-1 mr-2"></i>
+                                    <span>Autor de 5 livros sobre concursos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-500 mt-1 mr-2"></i>
+                                    <span>Palestrante em eventos nacionais</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Nossos Cursos</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Escolha o curso ideal para o concurso que você deseja prestar.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="bg-blue-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">Curso Básico</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-3xl font-bold text-gray-800">R$ 97</span>
+                            <span class="ml-1 text-gray-500">/mês</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Ideal para quem está começando a se preparar para concursos.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Acesso a todas as videoaulas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Material didático digital</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>1 simulado por mês</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-2"></i>
+                                <span>Suporte individualizado</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition duration-300">Matricule-se</button>
+                    </div>
+                </div>
+                
+                <!-- Course 2 - Featured -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-blue-500 transform scale-105">
+                    <div class="bg-blue-700 py-4 px-6 flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-white">Curso Completo</h3>
+                        <span class="bg-yellow-400 text-blue-800 text-xs font-bold px-2 py-1 rounded-full">MAIS POPULAR</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-3xl font-bold text-gray-800">R$ 197</span>
+                            <span class="ml-1 text-gray-500">/mês</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">O pacote completo para sua aprovação no concurso dos sonhos.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Todas as vantagens do Curso Básico</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Suporte individualizado com o professor</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>2 simulados por mês com correção detalhada</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Grupo exclusivo de estudos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Plano de estudos personalizado</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 px-4 rounded-lg font-medium transition duration-300">Matricule-se</button>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="bg-blue-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">Curso Intensivo</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline mb-4">
+                            <span class="text-3xl font-bold text-gray-800">R$ 297</span>
+                            <span class="ml-1 text-gray-500">/mês</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Para quem precisa de preparação acelerada para concursos próximos.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Todas as vantagens do Curso Completo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aulas extras de resolução de questões</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>3 simulados por mês com análise de desempenho</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Mentoria semanal individual</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Prioridade no atendimento</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition duration-300">Matricule-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Depoimentos de alunos</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Veja o que nossos alunos aprovados têm a dizer sobre o curso.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Ana Clara" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Clara</h4>
+                            <p class="text-blue-600 text-sm">Aprovada no TRT</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"O método do Professor Carlos mudou completamente minha forma de estudar. Em 6 meses de curso consegui minha aprovação no concurso que tanto sonhava!"</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ricardo" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ricardo</h4>
+                            <p class="text-blue-600 text-sm">Aprovado na Receita Federal</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"O material didático é excelente e as aulas são muito objetivas. O diferencial mesmo foi o suporte individualizado que recebi do professor durante toda minha preparação."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Juliana" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Juliana</h4>
+                            <p class="text-blue-600 text-sm">Aprovada no MPU</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Depois de tentar outros cursos, finalmente encontrei um que realmente prepara para a prova. Os simulados são idênticos ao estilo das bancas e isso fez toda diferença no dia da prova."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Options Section -->
+    <section id="pricing" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Formas de Pagamento</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Escolha a opção que melhor se adapta à sua necessidade.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Option 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 payment-option">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-credit-card text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Cartão de Crédito</h3>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Parcelamento em até 12x</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Sem juros no plano anual</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Acesso imediato ao curso</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition duration-300">Pagar com cartão</button>
+                </div>
+                
+                <!-- Option 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-2 border-blue-500 payment-option transform scale-105">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-barcode text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Boleto Bancário</h3>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>5% de desconto à vista</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Pagamento único</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Acesso liberado após compensação</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition duration-300">Gerar boleto</button>
+                </div>
+                
+                <!-- Option 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 payment-option">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-pix text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">PIX</h3>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>10% de desconto à vista</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Acesso imediato após pagamento</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Pagamento rápido e seguro</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition duration-300">Pagar com PIX</button>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-lg p-6 max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-center text-blue-800 mb-4">Garantia de 7 dias</h3>
+                <p class="text-center text-gray-700">Se em até 7 dias você não estiver satisfeito com o curso, devolvemos 100% do seu dinheiro sem burocracia. Sem perguntas, sem complicações.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex items-center justify-between w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-800">Por quanto tempo tenho acesso ao curso?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>O acesso ao curso é válido por 12 meses a partir da data da matrícula. Para os planos anuais, o acesso é renovado automaticamente.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex items-center justify-between w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-800">O curso prepara para qual banca examinadora?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Nosso método é adaptável para todas as principais bancas (CESPE, FCC, FGV, VUNESP etc.), com ênfase nas particularidades de cada uma. O professor orienta sobre as diferenças durante as aulas.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex items-center justify-between w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-800">Posso assistir às aulas pelo celular?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Sim! Nossa plataforma é totalmente responsiva e adaptada para dispositivos móveis. Você pode estudar pelo celular, tablet ou computador.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex items-center justify-between w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-800">Como funciona o suporte com o professor?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Nos cursos Completo e Intensivo, você tem acesso a um grupo exclusivo no Telegram onde o professor responde dúvidas diariamente. Além disso, há plantões semanais de dúvidas via videoconferência.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex items-center justify-between w-full text-left focus:outline-none">
+                        <h3 class="text-lg font-medium text-gray-800">O material é atualizado com frequência?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Sim! Todas as alterações legislativas e jurisprudenciais relevantes são incorporadas ao material didático imediatamente. Você recebe notificações sempre que houver atualizações.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-6">Ainda tem dúvidas? Entre em contato conosco!</p>
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Fale conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para transformar seu futuro?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Matricule-se agora e dê o primeiro passo rumo à sua carreira pública.</p>
+            <a href="#pricing" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg inline-block transition duration-300">
+                Quero me matricular agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">CP</div>
+                        <span class="ml-3 text-xl font-bold">Curso Preparatório</span>
+                    </div>
+                    <p class="text-gray-400">Preparando candidatos para concursos públicos desde 2010.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Termos de Uso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Trabalhe Conosco</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Seja um Afiliado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>contato@cursopreparatorio.com.br</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>(31) 99999-9999</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Belo Horizonte - MG</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-500 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-500 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-bold mb-2">Baixe nosso app</h4>
+                        <div class="flex space-x-2">
+                            <a href="#" class="bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded flex items-center">
+                                <i class="fab fa-google-play mr-2"></i>
+                                <span class="text-xs">Google Play</span>
+                            </a>
+                            <a href="#" class="bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded flex items-center">
+                                <i class="fab fa-apple mr-2"></i>
+                                <span class="text-xs">App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Curso Preparatório. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.classList.remove('transform', 'rotate-180');
+                } else {
+                    icon.classList.add('transform', 'rotate-180');
+                }
+            });
+        });
+
+        // Mobile menu toggle (placeholder - would need more implementation)
+        document.querySelector('.md\\:hidden button').addEventListener('click', () => {
+            alert('Menu mobile seria implementado aqui');
+        });
+    </script>
+</body>
+</html>
